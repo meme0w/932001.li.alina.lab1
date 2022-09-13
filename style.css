@@ -73,7 +73,7 @@ body{
     margin-bottom:0;
 }
 
-.list2 #ul1>p:last-child{
+.list2 #ul1>li:last-child{
     margin-bottom: 5px;
     margin-top: 25px;
 }
@@ -84,6 +84,12 @@ body{
 
 #ul1{
     padding-left: 0;
+    list-style-type: none;
+}
+
+#ul1 li{
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 table {
