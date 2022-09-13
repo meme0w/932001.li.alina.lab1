@@ -1,0 +1,123 @@
+body{
+    color: white;
+    height: 100%;
+    margin:0;
+}
+.header{
+    background-color: green;
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main{
+    background-color: blue;
+    display: block;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 20px 20px 5px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.infoContent h1{
+    margin-top: 0;
+    font-size: 2em;
+}
+
+#square{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    float: left;
+    border: 4px solid white;
+    border-radius: 15px 0;
+    margin: 0 20px 30px 0;
+}
+
+.link {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.link a {
+    color: red;
+}
+
+.list1 h2{
+    margin-top: 0;
+    word-spacing: 15px;
+}
+
+.list1 ul>li:nth-child(2){
+    color: lightblue;
+    letter-spacing: 6px;
+}
+
+.list_tabel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list2>h3:first-child{
+    margin-bottom: 16px;
+}
+.list2 h3{
+    margin-top: 0;
+}
+
+.list2 #ul1{
+    margin-bottom:0;
+}
+
+.list2 #ul1>p:last-child{
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+.list2{
+    float: left;
+}
+
+#ul1{
+    padding-left: 0;
+}
+
+table {
+    width: 150px;
+    height: 100px;
+    display: table;
+    text-align: center;
+    border: solid 1px #ccc;
+    box-sizing: border-box;
+    border-spacing: 3px;
+    border-collapse: separate; 
+}
+
+table td, th{
+    border: solid 1px #ccc;
+}
+
+.table1 {
+    vertical-align: bottom;/* выравнивание по нижней части */
+}
+
+#pic{
+    float: right;
+    margin-top: 10px;
+    box-shadow: 3px 3px 5px 0 black;
+    border-radius: 8px;
+}
+
+.footer{
+    background-color: green;
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
