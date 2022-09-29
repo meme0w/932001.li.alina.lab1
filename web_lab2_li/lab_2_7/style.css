@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+
+.static{
+    position: static;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 110px;
+    background-color: blueviolet;
+    color: white;
+}
+.relativ1{
+    position: relative;
+    left: 10px;
+    width: 150px;
+    height: 110px;
+    background-color: darkred;
+    color: white;
+}
+.relativ2{
+    position: relative;
+    top: -30px;
+    left: 40px;
+    width: 150px;
+    height: 110px;
+    background-color: peru;
+    color: white;
+}
+.parent{
+    position: relative;
+    left: 10px;
+    width: 600px;
+    height: 400px;
+    background-color: indianred;
+    color: white;
+}
+.absolute{
+    position: absolute;
+    background-color: indigo;
+    color: white;
+    width: 300px;
+    height: 200px;
+    right: 0;
+    top: 30%;
+}
+.fix{
+    position: fixed;
+    background-color: forestgreen;
+    color: white;
+    height: 110px;
+    right: 0;
+    bottom: 0;
+}

@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+.float_box{
+    display: block;
+    float: left;
+    background-color: aquamarine;
+    width: 200px;
+    height: 100px;
+    margin: 20px 0 15px 20px;
+}
+
+.fclear_box{
+    display: block;
+    background-color: bisque;
+    margin: 0 10px 0 10px;
+    clear: left;
+}

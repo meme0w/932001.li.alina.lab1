@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+
+.main{
+    background-color: aqua;
+    margin: 10px 10px 0 10px;
+    border: solid 1px green;
+}
+
+.clear{
+    clear: right;
+}
+.pic{
+    float: right ;
+}

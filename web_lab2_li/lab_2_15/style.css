@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+
+ul{
+    padding-left: 0px;
+}
+li{
+    display: inline-block;
+    background-color: aquamarine;
+    width: 200px;
+    height: 100px;
+    margin: 20px 0 15px 25px;
+}
+
+.fclear_box{
+    display: block;
+    background-color: bisque;
+    margin: 0 10px 0 10px;
+    clear: left;
+}

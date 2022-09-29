@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+
+.txt1{
+    display: block;
+    display: flex;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.txt2{
+    display: block;
+    display: flex;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 50px;
+    border-width: 10px;
+    border-color: blue;
+    border-style: solid;
+}

@@ -1,0 +1,19 @@
+#C8FC98 зел
+#EAEAEA сер
+#FFFF80 желт
+#FDE95E желт
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine

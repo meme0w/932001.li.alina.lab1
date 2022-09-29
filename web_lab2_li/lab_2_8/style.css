@@ -1,0 +1,45 @@
+body{
+    margin: 10px;
+}
+p{
+    margin: 0;
+}
+.main{
+    display: block;
+    display: flex;
+}
+.left_side{
+    position: relative;
+    width: 200px;
+    float: left;
+}
+.list{
+    position: relative;
+    z-index: 100;
+    width: 200px;
+    background-color: bisque;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.list ul{
+    margin: 0;
+}
+.block{
+    position: absolute;
+    width: 200px;
+    background-color: aqua;
+    top:0;
+    bottom: 0;
+}
+.right_side{
+    position: relative;
+    background-color: darkgrey;
+}
+.footer{
+    left: 0;
+    position: fixed;
+    background-color: limegreen;
+    height: 9%;
+    bottom: 0;
+    width: 100%;
+}

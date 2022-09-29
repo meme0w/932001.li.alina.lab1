@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+}
+p{
+    margin: 0;
+}
+.main{
+    display: flex;
+    background-color: aqua;
+    margin: 10px 10px 0 10px;
+    border: solid 1px green;
+}
+.l_side{
+    float: left;
+}
+.list{
+    width: 450px;
+    background-color: bisque;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.list ul{
+    margin: 0;
+}
+.r_side{
+    float: right;
+    background-color: darkgrey;
+}
+.txt{
+    width: 1439px;
+}
+@media (max-width: 550px) {
+    .main{
+        display: block;
+    }
+    .l_side{
+        width: 100%;
+    }
+    .list{
+        background-color:  aqua;
+        width: 100%;
+    }
+    ul li{
+        display: inline;
+      }
+    ul{
+        background-color: bisque;
+      }
+    .r_side{
+        margin: 0px;
+    }
+    .clear{
+        clear: right;
+    }
+    p{
+        width: 100%;
+    }
+}
