@@ -1,0 +1,197 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color:#edeef0 ;
+    overflow-x: hidden;
+}
+
+.header{
+    position: fixed;
+    background-color: #507299;
+    height: 45px;
+    width: 100%;
+    top:0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+.pic_logo{
+    margin-left: 14%;
+}   
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    margin-top: 60px;
+    margin-left: 100px;
+    display: block;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e5473;
+    width: 200px;
+}
+
+.menu li{
+    margin-top: 3px;
+    margin-bottom: 0;
+    padding: 10px 0 10px 0;
+}
+
+.menu>li:first-child{
+    margin-top:5px;
+}
+
+.lenta{
+    margin-top: 60px;
+    display: block;
+    padding-left: 17px;
+    margin-right: 18%;
+}
+
+.lenta li{
+    display: block;
+    width: 420px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px; 
+    box-shadow: 0 0 1px 1px #d0d0d0;
+}
+
+.lenta li img{
+    width: 420px;
+}
+
+.lenta li:nth-child(3){
+    position: relative;
+}
+
+.lenta li:last-child{
+    margin-bottom: 0;
+}
+
+.line{
+    height: 3px;
+    background-color:#d0d0d0 ;
+    margin-top: 7px;
+}
+
+.line1{
+    position: absolute;
+    width: 460px;
+    height: 3px;
+    background-color:#d0d0d0 ;
+    top: 45px;
+    left: 0;
+}
+
+#kkk{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.L_C{
+    margin-top: 7px;
+    margin-bottom: 18px;
+}
+
+.L_C p{
+    display: block;
+}
+
+.L_C p{
+    margin: 0;
+    color: #2e5473;
+}
+
+.Like{
+    float: left;
+}
+
+.Com{
+    float: right;
+}
+
+.reclame{
+    position: fixed;
+    display: block;
+    margin-left: 150px;
+    top: 50px;
+    right: 430px;
+}
+
+.reclame li{
+    display: block;
+    width: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; 
+    box-shadow: 0 0 1px 1px #d0d0d0;
+}
+
+.reclame p{
+    background-color:#e1e5eb;
+}
+
+.reclame h4{
+    padding-left: 6px;
+}
+
+.footer{
+    height: 30px;
+    background-color: white;
+    color: grey;
+    line-height: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media  (max-width: 1698px) {
+    .reclame {
+        display:none;
+    }
+}
+
+@media  (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+    .menu{
+        width: 500px;
+        margin-left: 0;
+    }
+    .menu li{
+        display: inline-block;
+        padding: 0 13px 3px 13px;
+    }
+    .menu li:first-child{
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+    .menu li:nth-child(4){
+        margin-left: 30px;
+    }
+    .lenta{
+        margin-top: 20px;
+        margin-right: 0;
+    }
+    .lenta li{
+        margin-right: 0;
+    }
+}
+
+.menu li:hover{
+    background-color: #e1e5eb;
+}
+
+.txt::selection {
+    background: #e1e5eb;
+    color: green;
+    }
