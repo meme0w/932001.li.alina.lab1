@@ -1,0 +1,63 @@
+﻿body{
+    margin: 0;
+    font-family: Arial;
+}
+
+nav {
+    background-color: #222222;
+    display: flex;
+}
+
+nav h3{
+    margin-left:200px;
+    margin-right: 30px;
+    color: darkgray;
+    font-weight: 500;
+}
+
+#Home{
+    display:flex;
+    align-items:center;
+}
+
+#Home a{
+    text-decoration: none;
+    color: darkgray;
+    font-size:16px;
+}
+
+footer{
+    margin: 0px 200px;
+}
+
+footer hr{
+    border-top: 1px solid darkgray;
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+    margin:20px 0px;
+}
+
+.content{
+    width:100%;
+    margin:0px 200px;
+}
+
+.content h2{
+    font-weight:500;
+    font-size:30px;
+    margin-bottom: 15px;
+}
+
+.content p{
+    margin: 4px 0;
+}
+
+.content ul li {
+    margin:5px 0px;
+}
+
+.content ul li a{
+   text-decoration:none;
+   color: dodgerblue;
+}

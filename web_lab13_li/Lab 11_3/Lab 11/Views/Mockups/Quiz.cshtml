@@ -1,0 +1,25 @@
+﻿@model Lab_11_3.ViewModel.QuizData
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string task = ViewBag.Task;
+}
+
+<div class="content">
+    <h2>@ViewData["Title"]</h2>
+    @using (Html.BeginForm("QuizResult", "Mockups", FormMethod.Post))
+    {
+        <p>
+            @Html.Label("Task",task)
+        </p>
+        <p>
+            @Html.TextBox("userAnswer","", new { type="number" })
+        </p>
+        <p>
+            <div class="row">
+                <input id="next" type="submit" formaction="~/Mockups/NewQuestion" value="Next" />
+                <input id="finish" type="submit" formaction="~/Mockups/QuizResult" value="Finish" />
+            </div>
+        </p>
+    }
+</div>

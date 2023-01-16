@@ -1,0 +1,42 @@
+﻿@model Lab_11_1.ViewModel.Data
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var sum = Model.FirstNumber + Model.SecondNumber;
+    var sub = Model.FirstNumber - Model.SecondNumber;
+    var mult = Model.FirstNumber * Model.SecondNumber;
+    int div = 0;
+    bool error = false;
+    try
+    {
+        div = Model.FirstNumber / Model.SecondNumber;
+    }
+    catch (DivideByZeroException)
+    {
+        error = true;
+    }
+}
+
+<div class="content">
+    <h2>@Model.Title</h2>
+    <p><strong>Rand Value First : @Model.FirstNumber</strong></p>
+    <p><strong>Rand Value Second : @Model.SecondNumber</strong></p>
+    <p><strong>Add :</strong></p>
+    <p>@Model.FirstNumber + @Model.SecondNumber = @sum</p>
+    <p><strong>Sub :</strong></p>
+    <p>@Model.FirstNumber - @Model.SecondNumber = @sub</p>
+    <p><strong>Mult :</strong></p>
+    <p>@Model.FirstNumber * @Model.SecondNumber = @mult</p>
+    <p><strong>Div :</strong></p>
+    @if(error == true)
+    {
+        <p>Деление на 0 запрещено!</p>
+    }
+    else
+    {
+        <p>@Model.FirstNumber / @Model.SecondNumber = @div</p>
+    }
+</div>

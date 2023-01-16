@@ -1,0 +1,25 @@
+﻿@model Lab11_2.ViewModel.Data
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+    <h2>@ViewData["Title"]</h2>
+    <form asp-action="ModelBindingInParameters" asp-controller="Calc" method="post">
+        <div>
+            <p>
+                <input id="FirstNumber" type="number" asp-for="FirstNumber" />
+            </p>
+            <p>
+                <select asp-for="Operation" asp-items="@ViewBag.Operations"></select>
+            </p>
+            <p>
+                <input id="SecondNumber" type="number" asp-for="SecondNumber" />
+            </p>
+            <p>
+                <input type="submit" value="Submit" />
+            </p>
+        </div>
+    </form>
+</div>

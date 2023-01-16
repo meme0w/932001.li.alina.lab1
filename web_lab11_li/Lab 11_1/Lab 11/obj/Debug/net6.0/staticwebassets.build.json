@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "TcgE35vO6VBjlifgeoYnn/SkS91vb9VVYY1Bc6pLYpM=",
+  "Source": "Lab 11_1",
+  "BasePath": "_content/Lab 11_1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Lab 11_1\\wwwroot",
+      "Source": "Lab 11_1",
+      "ContentRoot": "D:\\Alina\\Lab 11_1\\Lab 11\\wwwroot\\",
+      "BasePath": "_content/Lab 11_1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Alina\\Lab 11_1\\Lab 11\\wwwroot\\css\\_Layout.css",
+      "SourceId": "Lab 11_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Alina\\Lab 11_1\\Lab 11\\wwwroot\\",
+      "BasePath": "_content/Lab 11_1",
+      "RelativePath": "css/_Layout.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\_Layout.css"
+    }
+  ]
+}

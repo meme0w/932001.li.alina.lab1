@@ -1,0 +1,99 @@
+html,body{
+    overflow:hidden;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;    
+    align-items: center;
+}
+.curtain{
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    transition-duration: 0.2s;
+}
+
+.curtain:hover{
+    transform: translateY(-5%);
+    transition-duration: 0.2s;
+}
+
+.lamp{
+    background-image: url("3.png");
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+
+.performance{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    width: 500px;
+    visibility: hidden;
+}
+
+.wizard{
+    background-image: url("2.jpg");
+    height: 370px;
+    width: 370px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.magic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hat{
+    background-image: url("4.png");
+    height: 120px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+.bunny{
+    background-image: url("5.png");
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bird{
+    background-image: url("6.png");
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.light{
+    height: 0; 
+    width: 75px;
+    border-bottom: 670px solid yellow;
+    border-left: 364px solid transparent;
+    border-right: 360px solid transparent;
+    position: absolute;
+    top:115px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    visibility: hidden;
+    pointer-events: none;
+}

@@ -1,0 +1,45 @@
+﻿@using Lab_11_1.Services;
+@inject DataService data
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var FirstNumber = data.getFirstNumber();
+    var SecondNumber = data.getSecondNumber();
+    var sum = FirstNumber + SecondNumber;
+    var sub = FirstNumber - SecondNumber;
+    var mult = FirstNumber * SecondNumber;
+    int div = 0;
+    bool error = false;
+    try
+    {
+        div = FirstNumber / SecondNumber;
+    }
+    catch (DivideByZeroException)
+    {
+        error = true;
+    }
+}
+
+<div class="content">
+    <h2>@data.Title</h2>
+    <p><strong>Rand Value First : @FirstNumber</strong></p>
+    <p><strong>Rand Value Second : @SecondNumber</strong></p>
+    <p><strong>Add :</strong></p>
+    <p>@FirstNumber + @SecondNumber = @sum</p>
+    <p><strong>Sub :</strong></p>
+    <p>@FirstNumber - @SecondNumber = @sub</p>
+    <p><strong>Mult :</strong></p>
+    <p>@FirstNumber * @SecondNumber = @mult</p>
+    <p><strong>Div :</strong></p>
+    @if (error == true)
+    {
+        <p>Деление на 0 запрещено!</p>
+    }
+    else
+    {
+        <p>@FirstNumber / @SecondNumber = @div</p>
+    }
+</div>

@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var result = 0;
+    switch (ViewBag.Operation)
+    {
+        case "+":
+            result = ViewBag.FirstNumber + ViewBag.SecondNumber;
+            break;
+        case "-":
+            result = ViewBag.FirstNumber - ViewBag.SecondNumber;
+            break;
+        case "*":
+            result = ViewBag.FirstNumber * ViewBag.SecondNumber;
+            break;
+        case "/":
+            if(ViewBag.SecondNumber == 0)
+            {
+                result = 0;
+            }
+            else
+            {
+                result = ViewBag.FirstNumber / ViewBag.SecondNumber;
+            }
+            break;
+    }
+}
+
+<div class="content">
+    <h2>Result</h2>
+    @{
+        if (ViewBag.SecondNumber == 0 && ViewBag.Operation == "/")
+    {
+        <h3>На 0 делить нельзя!</h3>
+    }
+    else
+    {
+        <h3>@ViewBag.FirstNumber @ViewBag.Operation @ViewBag.SecondNumber = @result</h3>
+    } 
+    }
+</div>
